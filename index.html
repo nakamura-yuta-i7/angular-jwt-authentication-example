@@ -20,6 +20,9 @@
     <script src="systemjs.config.js"></script>
     <script>
         System.import('app').catch(function (err) { console.error(err); });
+        localStorage.setItem("count", parseInt(localStorage.getItem("count") || 0) + 1 )
+        console.log( 'localStorage.getItem("count")', localStorage.getItem("count") );
+        console.log( 'localStorage.count', localStorage.count );
     </script>
 </head>
 <body>
